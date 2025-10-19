@@ -3,11 +3,11 @@ import dotenv from 'dotenv';
 import cookieParser from 'cookie-parser';
 import cors from 'cors';
 
-import authRoutes from '../routes/auth.routes.js';
-import protectedRoutes from '../routes/protected.routes.js';
-import userRoutes from '../routes/user.routes.js';
-import mastersRoutes from '../routes/masters.routes.js';
-import { pool } from '../config/db.js';
+import authRoutes from './routes/auth.routes.js';
+import protectedRoutes from './routes/protected.routes.js';
+import userRoutes from './routes/user.routes.js';
+import mastersRoutes from './routes/masters.routes.js';
+import { pool } from './config/db.js';
 
 dotenv.config();
 
