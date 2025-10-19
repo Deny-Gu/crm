@@ -1,0 +1,13 @@
+body {
+  font-size: 14px;
+  background: linear-gradient(135deg, rgba(128, 128, 128, 0.08), rgb(0 83 189 / 12%));
+}
+
+a {
+  color: black;
+  text-decoration: none;
+
+  &:hover, &:active {
+    color: rgb(82, 82, 82) !important;
+  }
+}

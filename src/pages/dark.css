@@ -1,0 +1,80 @@
+:root {
+  --rmdp-primary-dark: #000000;
+  --rmdp-secondary-dark: #979797;
+  --rmdp-shadow-dark: #b6b6b6;
+  --rmdp-today-dark: #757575;
+  --rmdp-hover-dark: #979797;
+  --rmdp-deselect-dark: #000000;
+}
+
+.dark .rmdp-wrapper {
+  border: 1px solid var(--rmdp-secondary-dark);
+  box-shadow: 0 0 5px var(--rmdp-secondary-dark);
+}
+
+.dark .rmdp-panel-body li {
+  background-color: var(--rmdp-primary-dark);
+  box-shadow: 0 0 2px var(--rmdp-secondary-dark);
+}
+
+.dark .rmdp-week-day {
+  color: var(--rmdp-primary-dark);
+}
+
+.dark .rmdp-day.rmdp-deactive {
+  color: var(--rmdp-secondary-dark);
+}
+
+.dark .rmdp-range {
+  background-color: var(--rmdp-primary-dark);
+  box-shadow: 0 0 3px var(--rmdp-shadow-dark);
+}
+
+.dark .rmdp-arrow {
+  border: solid var(--rmdp-primary-dark);
+  border-width: 0 2px 2px 0;
+}
+
+.dark .rmdp-arrow-container:hover {
+  background-color: var(--rmdp-primary-dark);
+  box-shadow: 0 0 3px var(--rmdp-secondary-dark);
+}
+
+.dark .rmdp-panel-body::-webkit-scrollbar-thumb {
+  background: var(--rmdp-primary-dark);
+}
+
+.dark .rmdp-day.rmdp-today span {
+  background-color: var(--rmdp-today-dark);
+}
+
+.green .rmdp-rtl .rmdp-panel {
+  border-left: unset;
+  border-right: 1px solid var(--rmdp-secondary-green);
+}
+
+.dark .rmdp-day.rmdp-selected span:not(.highlight) {
+  background-color: var(--rmdp-primary-dark);
+  box-shadow: 0 0 3px var(--rmdp-shadow-dark);
+}
+
+.dark .rmdp-day:not(.rmdp-day-hidden) span:hover {
+  background-color: var(--rmdp-hover-dark) !important;
+}
+
+.dark .b-deselect {
+  color: var(--rmdp-deselect-dark);
+  background-color: white;
+}
+
+.dark .rmdp-action-button {
+  color: var(--rmdp-primary-dark);
+}
+
+.dark .rmdp-button:not(.rmdp-action-button) {
+  background-color: var(--rmdp-primary-dark);
+}
+
+.dark .rmdp-button:not(.rmdp-action-button):hover {
+  background-color: var(--rmdp-deselect-dark);
+}
