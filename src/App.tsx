@@ -7,7 +7,6 @@ import Profile from './pages/Profile'
 import Masters from './pages/Masters'
 import Master from './pages/Master'
 
-
 function App() {
   return (
     <Routes>
