@@ -8,8 +8,12 @@ import protectedRoutes from './routes/protected.routes.js';
 import userRoutes from './routes/user.routes.js';
 import mastersRoutes from './routes/masters.routes.js';
 import { pool } from './config/db.js';
+import { fileURLToPath } from 'url';
 
 dotenv.config();
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 const app = express();
 app.use(express.json());
@@ -39,6 +43,12 @@ app.use('/api', authRoutes);
 app.use('/api', protectedRoutes);
 app.use('/api', userRoutes);
 app.use('/api', mastersRoutes);
+
+// SPA
+app.use(express.static(path.join(__dirname, 'dist')));
+app.get('/*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'dist', 'index.html'));
+});
 
 // ❗ Экспортируем Express-приложение как handler
 export default app;
