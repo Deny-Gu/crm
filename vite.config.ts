@@ -3,10 +3,6 @@ import react from '@vitejs/plugin-react'
 import { VitePWA } from 'vite-plugin-pwa'
 
 export default defineConfig({
-  base: '/', // Настроим базовый путь для всех статичных ресурсов
-  build: {
-    outDir: 'dist', // Папка, куда Vite соберет статические файлы
-  },
   plugins: [
     react(),
     VitePWA({

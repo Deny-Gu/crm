@@ -1,3 +1,0 @@
-ALTER TABLE `users`
-  ADD COLUMN `telegram` VARCHAR(255) NULL DEFAULT NULL
-  AFTER `contacts`;
