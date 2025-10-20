@@ -4,7 +4,7 @@
     {
       "src": "api/index.js",
       "use": "@vercel/node",
-      "config": { "includeFiles": "api/routes/**" }
+      "config": { "includeFiles": "api/**" }
     },
     {
       "src": "dist/**",
